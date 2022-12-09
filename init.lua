@@ -1,18 +1,33 @@
-require("plugins")
-require("nvim-tree").setup()
-require("toggleterm").setup{
-	direction = "float"
-}
+-- Load Packer and plugins
+require("user.plugins")
 
--- VS Code theme
-require("tokyonight").setup{
-	style = "storm",
-	transparent = true
-}
-vim.cmd[[colorscheme tokyonight]]
+-- File Explorer
+require("user.nvim-tree")
 
--- Tab sizes
-local set = vim.opt -- set options
-set.tabstop = 4
-set.softtabstop = 4
-set.shiftwidth = 4
+-- Float Terminal
+require("user.toggleterm")
+
+-- Theme
+require("user.tokyonight")
+
+-- Lualine status bar
+require("user.lualine")
+
+-- Tabs
+require("user.bufferline")
+
+-- Indentation highlight
+require("user.indent_blankline")
+
+-- Syntax highlighting
+require("user.nvim-treesitter")
+
+-- Autocompletion
+require("user.cmp")
+
+-- Git
+require("user.gitsigns")
+
+-- General vim configs
+require("user.config")
+
