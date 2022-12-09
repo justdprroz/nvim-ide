@@ -5,19 +5,19 @@ require("user.plugins")
 require("user.nvim-tree")
 
 -- Float Terminal
-require("user.toggleterm")
+require("user.terminal")
 
 -- Theme
-require("user.tokyonight")
+require("user.theme")
 
 -- Lualine status bar
-require("user.lualine")
+require("user.status")
 
 -- Tabs
-require("user.bufferline")
+require("user.tabs")
 
 -- Indentation highlight
-require("user.indent_blankline")
+require("user.indent")
 
 -- Syntax highlighting
 require("user.nvim-treesitter")
@@ -26,7 +26,10 @@ require("user.nvim-treesitter")
 require("user.cmp")
 
 -- Git
-require("user.gitsigns")
+require("user.git")
+
+-- Autosave
+require("user.autosave")
 
 -- General vim configs
 require("user.config")

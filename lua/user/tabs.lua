@@ -7,7 +7,9 @@ require("bufferline").setup{
                 text_align = "center",
                 separator = true
             }
-        }
+        },
+        mode = "buffers",
+        numbers = "ordinal",
     }
 }
 
