@@ -25,6 +25,9 @@ require("user.nvim-treesitter")
 -- Autocompletion
 require("user.cmp")
 
+-- Snippets
+require("user.luasnip")
+
 -- Git
 require("user.git")
 
