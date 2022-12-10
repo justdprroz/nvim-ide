@@ -40,6 +40,4 @@ return require("packer").startup(function(use)
     use "hrsh7th/cmp-nvim-lsp"
     -- Git highlights
     use "lewis6991/gitsigns.nvim"
-    -- Autosave
-    use "Pocco81/auto-save.nvim"
 end)

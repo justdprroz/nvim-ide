@@ -74,11 +74,6 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
-  ["auto-save.nvim"] = {
-    loaded = true,
-    path = "/home/justdprroz/.local/share/nvim/site/pack/packer/start/auto-save.nvim",
-    url = "https://github.com/Pocco81/auto-save.nvim"
-  },
   ["bufferline.nvim"] = {
     loaded = true,
     path = "/home/justdprroz/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
@@ -148,6 +143,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/justdprroz/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
     url = "https://github.com/folke/tokyonight.nvim"
+  },
+  ["vim-bbye"] = {
+    loaded = true,
+    path = "/home/justdprroz/.local/share/nvim/site/pack/packer/start/vim-bbye",
+    url = "https://github.com/moll/vim-bbye"
   }
 }
 
