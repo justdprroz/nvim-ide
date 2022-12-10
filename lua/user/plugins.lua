@@ -40,4 +40,5 @@ return require("packer").startup(function(use)
     -- Git highlights
     use "lewis6991/gitsigns.nvim"
     use "Pocco81/auto-save.nvim"
+   
 end)

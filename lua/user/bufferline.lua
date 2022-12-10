@@ -8,8 +8,11 @@ require("bufferline").setup{
                 separator = true
             }
         },
-        mode = "buffers",
-        numbers = "ordinal",
+        indicator = {
+            icon = "▎",
+            style = "icon",
+        },
+        close_command = "bdelete! %d",
     }
 }
 

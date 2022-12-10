@@ -14,7 +14,7 @@ require("user.theme")
 require("user.status")
 
 -- Tabs
-require("user.tabs")
+require("user.bufferline")
 
 -- Indentation highlight
 require("user.indent")
