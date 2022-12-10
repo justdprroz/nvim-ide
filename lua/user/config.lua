@@ -1,18 +1,26 @@
--- Tab sizes and tabs to spaces
 local set = vim.opt
+-- tab sizes
 set.tabstop = 4
 set.softtabstop = 4
 set.shiftwidth = 4
-
 set.expandtab = true
+
+-- other settinfs
 set.hidden = true
 set.termguicolors = true
--- Shortcuts
---vim.keymap.set("n", "<Leader>q", ":q!")
-vim.api.nvim_set_keymap("n", "<C-[>", ":BufferLineCyclePrev<CR>", { noremap = true })
-vim.api.nvim_set_keymap("n", "<C-]>", ":BufferLineCycleNext<CR>", { noremap = true })
 
-vim.api.nvim_set_keymap("n", "<Leader>`", ":ToggleTerm direction=float<CR>", {noremap = true})
-vim.api.nvim_set_keymap("t", "<Leader>`", "<C-\\><C-n>:ToggleTerm<CR>", {noremap = true})
-vim.api.nvim_set_keymap("n", "<C-b>", ":NvimTreeFocus<CR>", {noremap = true})
+-- shortcuts
+local map = vim.api.nvim_set_keymap
+
+-- buffer navigation
+map("n", "<S-h>", ":BufferLineCyclePrev<CR>", { noremap = true })
+map("n", "<S-l>", ":BufferLineCycleNext<CR>", { noremap = true })
+map("n", "<S-q>", ":Bdelete!<CR>", { noremap = true })
+
+-- terminal
+map("n", "<Leader>`", ":ToggleTerm direction=float<CR>", {noremap = true})
+map("t", "<Leader>`", "<C-\\><C-n>:ToggleTerm<CR>", {noremap = true})
+
+-- file explorer
+map("n", "<C-b>", ":NvimTreeFocus<CR>", {noremap = true})
 

@@ -12,7 +12,7 @@ require("bufferline").setup{
             icon = "▎",
             style = "icon",
         },
-        close_command = "bdelete! %d",
+        close_command = "Bdelete! %d",
     }
 }
 

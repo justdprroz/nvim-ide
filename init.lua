@@ -28,9 +28,6 @@ require("user.cmp")
 -- Git
 require("user.git")
 
--- Autosave
-require("user.autosave")
-
 -- General vim configs
 require("user.config")
 
