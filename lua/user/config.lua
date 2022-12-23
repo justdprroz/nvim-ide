@@ -7,7 +7,11 @@ set.expandtab = true
 
 -- other settinfs
 set.hidden = true
+set.relativenumber = true
 set.number = true
+
+-- cursor
+set.guicursor = ""
 
 -- shortcuts
 local map = vim.api.nvim_set_keymap
