@@ -7,24 +7,26 @@ set.expandtab = true
 
 -- other settinfs
 set.hidden = true
---set.termguicolors = true
+set.number = true
 
 -- shortcuts
 local map = vim.api.nvim_set_keymap
 
 -- buffer navigation
 local opts = { noremap = true, silent = true}
-map("n", "<S-h>", ":BufferLineCyclePrev<CR>", opts)
-map("n", "<S-l>", ":BufferLineCycleNext<CR>", opts)
+map("n", "<S-h>", ":BufferLineCyclePrev<CR>", opts) -- Switch to buffer on the left
+map("n", "<S-l>", ":BufferLineCycleNext<CR>", opts) -- !! on the right
 
-map("n", "<S-q>", ":Bdelete!<CR>", opts)
-map("n", "<C-s>", ":w<CR>", opts)
-map("i", "<C-s>", "<Esc>:w<CR>i", opts)
+map("n", "<S-q>", ":Bdelete!<CR>", opts) -- close current buffer
+map("n", "<C-s>", ":w<CR>", opts) -- save buffer
+map("i", "<C-s>", "<Esc>:w<CR>a", opts) -- save buffer from insert mode
 
--- termina
-map("n", "<Leader>`", ":ToggleTerm direction=float<CR>", {noremap = true})
+-- terminal
+-- \ + ` (slash + grave)
+map("n", "<Leader>`", ":ToggleTerm direction=float<CR>", {noremap = true}) -- toggle terminal from normal mode
 map("t", "<Leader>`", "<C-\\><C-n>:ToggleTerm<CR>", {noremap = true})
 
+-- Ctrl + ` (Ctrl + grave)
 map("n", "<C-`>", ":ToggleTerm direction=float<CR>", {noremap = true})
 map("t", "<C-`>", "<C-\\><C-n>:ToggleTerm<CR>", {noremap = true})
 
