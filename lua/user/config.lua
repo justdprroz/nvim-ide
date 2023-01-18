@@ -12,6 +12,7 @@ set.number = true
 
 -- cursor
 set.guicursor = ""
+set.mouse = ""
 
 -- shortcuts
 local map = vim.api.nvim_set_keymap
