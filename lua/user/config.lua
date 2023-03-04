@@ -26,6 +26,12 @@ map("n", "<S-q>", ":Bdelete!<CR>", opts) -- close current buffer
 map("n", "<C-s>", ":w<CR>", opts) -- save buffer
 map("i", "<C-s>", "<Esc>:w<CR>a", opts) -- save buffer from insert mode
 
+-- split navigation
+map("n", "<C-h>", "<C-w>h", opts);
+map("n", "<C-j>", "<C-w>j", opts);
+map("n", "<C-k>", "<C-w>k", opts);
+map("n", "<C-l>", "<C-w>l", opts);
+
 -- terminal
 -- \ + ` (slash + grave)
 map("n", "<Leader>`", ":ToggleTerm direction=float<CR>", {noremap = true}) -- toggle terminal from normal mode
