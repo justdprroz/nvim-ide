@@ -19,5 +19,9 @@ vim.api.nvim_create_autocmd({ "VimEnter" }, { callback = open_nvim_tree })
 require("nvim-tree").setup {  
     git = {
         ignore = false;
-    }
+    },
+    update_focused_file = {
+        enable = true,
+        update_root = true,
+    },
 }

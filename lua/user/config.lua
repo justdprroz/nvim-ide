@@ -44,3 +44,5 @@ map("t", "<C-`>", "<C-\\><C-n>:ToggleTerm<CR>", {noremap = true})
 -- file explorer
 map("n", "<C-b>", ":NvimTreeFocus<CR>", {noremap = true})
 
+-- rename
+map("n", "<leader>r", "<cmd>lua vim.lsp.buf.rename()<CR>", { noremap = true })
