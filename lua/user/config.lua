@@ -14,6 +14,9 @@ set.number = true
 set.guicursor = ""
 set.mouse = ""
 
+-- clipboard
+set.clipboard = "unnamedplus"
+
 -- shortcuts
 local map = vim.api.nvim_set_keymap
 
