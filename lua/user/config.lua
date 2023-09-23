@@ -37,14 +37,14 @@ map("n", "<C-l>", "<C-w>l", opts);
 
 -- terminal
 -- \ + ` (slash + grave)
-map("n", "<Leader>`", ":ToggleTerm direction=float<CR>", {noremap = true}) -- toggle terminal from normal mode
-map("t", "<Leader>`", "<C-\\><C-n>:ToggleTerm<CR>", {noremap = true})
+-- map("n", "<Leader>`", ":ToggleTerm direction=float<CR>", {noremap = true}) -- toggle terminal from normal mode
+-- map("t", "<Leader>`", "<C-\\><C-n>:ToggleTerm<CR>", {noremap = true})
 
 -- Ctrl + ` (Ctrl + grave)
-map("n", "<C-`>", ":ToggleTerm direction=float<CR>", {noremap = true})
-map("t", "<C-`>", "<C-\\><C-n>:ToggleTerm<CR>", {noremap = true})
+-- map("n", "<C-`>", ":ToggleTerm direction=float<CR>", {noremap = true})
+-- map("t", "<C-`>", "<C-\\><C-n>:ToggleTerm<CR>", {noremap = true})
 
--- file explorer
+-- Focus on file explorer
 map("n", "<C-b>", ":NvimTreeFocus<CR>", {noremap = true})
 
 -- rename

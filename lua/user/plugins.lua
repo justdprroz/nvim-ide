@@ -3,7 +3,7 @@ return require("packer").startup(function(use)
     use "wbthomason/packer.nvim"
 
     -- More plugin management
-    use 'williamboman/mason.nvim'    
+    use 'williamboman/mason.nvim'
     use 'williamboman/mason-lspconfig.nvim'
 
     -- File explorer

@@ -30,16 +30,16 @@ require("user.nvim-treesitter")
 require("user.cmp")
 
 -- Snippets
-require("user.luasnip")
+require("luasnip.loaders.from_vscode").lazy_load()
 
 -- Git
-require("user.gitsigns")
+require("gitsigns").setup()
 
 -- General vim configs
 require("user.config")
 
 -- MASON
-require("user.mason")
+require("mason").setup()
 
 -- RUST
 require("user.rust-tools")
